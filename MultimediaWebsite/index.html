@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  
+  
+  <title>entertainer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="icon" href="http://cdn.onlinewebfonts.com/svg/img_96344.png" type="image/png" sizes="16x16">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
+  <link rel="stylesheet" href="about/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+  <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+* {
+  transition: all 500ms ease-out;
+  -webkit-transition: all 500ms ease-out;
+}
+
+html, body, section, .page {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+  -webkit-transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+  color: #fff;
+  background: #374046;
+  overflow: hidden;
+}
+
+section {
+  width:400%;  
+}
+
+.page {
+  position: absolute;
+}
+
+#p1 {
+  left: 0;
+}
+
+#p2 {
+  left: 100%;
+  background: #FF5722;
+}
+
+#p3 {
+  left: 200%;
+  background: #593C1F;
+}
+
+#p4 {
+  left: 300%;
+  background: deeppink;
+}
+
+ul {
+ position: fixed; 
+ z-index: 1;
+}
+#t1:target .page#p1 {
+    transform: translateX(0);
+}
+#t2:target .page#p2 {
+    transform: translateX(-90%);
+}
+#t3:target .page#p3 {
+    transform: translateX(-190%);
+}
+#t4:target .page#p4 {
+    transform: translateX(-290%);
+}
+
+#t2:target .page#p1, 
+#t3:target .page#p1,
+#t4:target .page#p1 {
+  background: black;
+}
+
+#t2:target .page#p1 .icon, 
+#t3:target .page#p1 .icon,
+#t4:target .page#p1 .icon {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.icon {
+  color: #fff;
+  font-size: 32px;
+  display: block;
+}
+
+ul .icon:hover {
+  opacity: 0.6;
+}
+
+#p1 .icon .title {
+  margin-bottom: 20px;
+}
+
+#t2:target ul .icon,
+#t3:target ul .icon,
+#t4:target ul .icon {
+  transform: scale(.6); 
+  transition-delay: .25s;
+}
+
+#t2:target #dos {
+  transform: scale(1.2) !important;
+}
+
+#t3:target #tres {
+  transform: scale(1.2) !important;
+}
+
+#t4:target #cuatro {
+  transform: scale(1.2) !important;
+}
+
+ul {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  /*right: 0;*/
+  margin: auto;
+  height: 280px;
+  width: 10%;
+  padding: 0;
+  text-align: center;
+ }
+
+ul li {
+  margin: 30px 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: open sans, sans-serif;
+}
+
+.title, .hint {
+  font-family: open sans, sans-serif;
+  display: block;
+}
+
+.title {
+  font-size: 38px;
+}
+
+.hint {
+  font-size: 13px;
+}
+
+.hint a {
+  color: #EFFF06;
+  transition: all 250ms easet-out;
+}
+
+.hint a:hover {
+  color: #FFF;
+}
+
+.page .icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10%;
+  left: 0;
+  width: 270px;
+  height: 170px;
+  margin: auto;
+  text-align: center;
+  font-size: 80px;
+  transform: translateX(360%);
+  line-height: 1.3;
+}
+
+.page#p1 .icon {
+  height: 220px;
+}
+
+.page#p1 .icon {
+  transform: translateX(0) !important;
+}
+
+#t2:target .page#p2 .icon {
+  transform: translateX(0) !important;
+  transition-delay: 1s;
+}
+
+#t3:target .page#p3 .icon {
+  transform: translateX(0) !important;
+  transition-delay: 1s;
+}
+
+#t4:target .page#p4 .about {
+  transform: translateX(0) !important;
+  transition-delay: .5s;
+}
+.about{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10%;
+  left: 0;
+  transform: translateX(360%);
+  line-height: 1.3;
+
+}
+
+.credit{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 10px;
+}
+
+.credit a {
+	color: #fff
+}
+
+.side-nav
+{
+  padding-bottom: 30px;
+}
+
+
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body style="background-color:rebeccapurple;">
+  
+   <div class="ct" id="t1">
+   <div class="ct" id="t2">
+   <div class="ct" id="t3">
+  <div class="ct" id="t4">
+  <section>  
+    <ul style="margin-top: 20px;">
+     <a href="#t1"><li class="icon side-nav fa fa-home" id="uno"><div>Home</div></li></a>
+     <a href="#t2"><li class="icon side-nav fa fa-film" id="dos"><div>Movies</div></li></a>
+     <a href="#t3"><li class="icon side-nav fa fa-music" id="tres"><div>Songs</div></li></a>
+     <a href="#t4"><li class="icon side-nav fa fa-address-book" id="cuatro"><div>About</div></li></a>
+   </ul>
+  <div class="page" id="p1">
+       <div style="text-align: center;"><h1>welcome to my page</h1></div>
+  </div>
+  <div class="page" id="p2">
+     <iframe src="movie.html" class="page" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" >
+    </iframe> 
+  </div>  
+  <div class="page" id="p3">
+    <iframe src="songs.html" class="page" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" >
+    </iframe> 
+  </div>
+  <div class="page" id="p4">
+   
+     <div class="about">
+       <div class="card middle">
+          <div class="front">
+            <img src="about/img.jpg" alt="">
+          </div>
+          <div class="back">
+            <div class="back-content middle">
+              <h2>Satheesh Gajula</h2>
+              <span>Web Developer</span>
+               <div class="sm">
+                  <a href="https://www.linkedin.com/in/satheeshgajula/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://github.com/satheesh22g" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="https://www.facebook.com/sattee.g.royal" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/satheesh_22g/?hl=en" target="_blank"<i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+
+</html>

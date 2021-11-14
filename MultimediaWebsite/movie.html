@@ -1,0 +1,358 @@
+<!DOCTYPE html><html class=''>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style class="cp-pen-styles">
+body {
+  height: 100%;
+  width: 100%;
+  background: #e9e9e9;
+  font-family: 'Arimo', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #010b26;
+}
+
+* {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.intro {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #6ABCEA;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.movie-card {
+  background: #ffffff;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 368px;
+  margin: 2em;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.movie-header {
+  padding: 0;
+  margin: 0;
+  height: 315px;
+  width: 100%;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.manOfSteel {
+  background: url("http://henrycavill.org/images/Films/2013-Man-of-Steel/posters/3-Walmart-Superman-a.jpg");
+  background-size: cover;
+}
+
+.Panther {
+  background: url("http://www.posterswholesale.com/resize/Shared/Images/Product/Framed-Mini-Poster-Black-Panther/PAE61485F-Black-Panther-Group.jpg?bw=500&bh=500");
+  background-size: cover;
+}
+
+.theDarkTower {
+  background: url("http://cdn.collider.com/wp-content/uploads/2017/03/the-dark-tower-poster.jpg");
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.bladeRunner2049 {
+  background: url("http://cdn.collider.com/wp-content/uploads/2017/05/blade-runner-2049-poster-ryan-gosling.jpeg");
+  background-size: cover;
+  background-position: 100% 80%;
+}
+.shawhobbs {
+  background: url("https://cdn3.movieweb.com/i/movie/1OoBFgUbKlEkhPf6CDvK4m5u8eNMkK/384:50/Hobbs-Shaw.jpg");
+  background-size: cover;
+  background-position: 100% 80%;
+}
+
+.shazam {
+  background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/12a7d271-b00c-4045-a128-eeffb6a6715f/dbmvw1g-8e372c4c-be06-46ca-9ce0-e7a8d734ff3b.png/v1/fill/w_734,h_1088,q_70,strp/shazam_fan_made_movie_poster_by_darthdestruktor_dbmvw1g-pre.jpg");
+  background-size: cover;
+  background-position: 100% 80%;
+}
+
+.header-icon-container {
+  position: relative;
+}
+
+.header-icon {
+  width: 100%;
+  height: 367px;
+  line-height: 367px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 54px;
+  text-shadow: 0px 0px 20px #6abcea, 0px 5px 20px #6ABCEA;
+  opacity: .85;
+}
+
+.header-icon:hover {
+  background: rgba(0, 0, 0, 0.15);
+  font-size: 74px;
+  text-shadow: 0px 0px 20px #6abcea, 0px 5px 30px #6ABCEA;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  opacity: 1;
+}
+
+.movie-card:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.08);
+}
+
+.movie-content {
+  padding: 18px 18px 24px 18px;
+  margin: 0;
+}
+
+.movie-content-header, .movie-info {
+  display: table;
+  width: 100%;
+}
+
+.movie-title {
+  font-size: 24px;
+  margin: 0;
+  display: table-cell;
+}
+
+
+
+.movie-info {
+  margin-top: 1em;
+}
+
+.info-section {
+  display: table-cell;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info-section:first-of-type {
+  text-align: left;
+}
+
+.info-section:last-of-type {
+  text-align: right;
+}
+
+.info-section label {
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: .5em;
+  font-size: 9px;
+}
+
+.info-section span {
+  font-weight: 700;
+  font-size: 11px;
+}
+.grid-icon
+{
+	margin-right: 30px;
+}
+
+
+
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+}
+</style></head><body>
+
+	<div><h1 style="text-align: center;">Movie Trailers</h1></div>
+<div class="container">
+<div class="grid-icon">
+	<div class="movie-card">
+		<div class="movie-header shazam">
+			<div class="header-icon-container">
+				<a href="https://www.youtube.com/embed/go6GEIrcvFY">
+					<i class="material-icons header-icon"></i>
+				</a>
+			</div>
+		</div><!--movie-header-->
+		<div class="movie-content">
+			<div class="movie-content-header">
+				<a href="#">
+					<h3 class="movie-title">Shazam</h3>
+				</a>
+				<div class="imax-logo"></div>
+			</div>
+			<div class="movie-info">
+				<div class="info-section">
+					
+				</div><!--seat-->
+			</div>
+		</div><!--movie-content-->
+	</div><!--movie-card-->
+
+	
+	<div class="movie-card">
+		<div class="movie-header shawhobbs">
+			<div class="header-icon-container">
+				<a href="https://www.youtube.com/embed/dv6B_VDOrA0">
+					<i class="material-icons header-icon"></i>
+				</a>
+			</div>
+		</div><!--movie-header-->
+		<div class="movie-content">
+			<div class="movie-content-header">
+				<a href="#">
+					<h3 class="movie-title">Shaw & Hobbs</h3>
+				</a>
+				<div class="imax-logo"></div>
+			</div>
+			<div class="movie-info">
+				<div class="info-section">
+					
+				</div><!--seat-->
+			</div>
+		</div><!--movie-content-->
+	</div><!--movie-card-->
+
+
+	
+	<div class="movie-card">
+		<div class="movie-header Panther">
+			<div class="header-icon-container">
+				<a href="https://www.youtube.com/embed/dxWvtMOGAhw">
+					<i class="material-icons header-icon"></i>
+				</a>
+			</div>
+		</div><!--movie-header-->
+		<div class="movie-content">
+			<div class="movie-content-header">
+				<a href="#">
+					<h3 class="movie-title">Black Panther</h3>
+				</a>
+				
+			</div>
+			<div class="movie-info">
+				
+				<div class="info-section">
+					
+				</div><!--screen-->
+				
+			</div>
+		</div><!--movie-content-->
+	</div><!--movie-card-->
+	
+	<div class="movie-card">
+		<div class="movie-header theDarkTower">
+			<div class="header-icon-container">
+				<a href="#">
+					<i class="material-icons header-icon"></i>
+				</a>
+			</div>
+		</div><!--movie-header-->
+		<div class="movie-content">
+			<div class="movie-content-header">
+				<a href="https://www.youtube.com/embed/GjwfqXTebIY">
+					<h3 class="movie-title">The Dark Tower</h3>
+				</a>
+				<div class="imax-logo"></div>
+			</div>
+			<div class="movie-info">
+				<div class="info-section">
+					
+				</div><!--seat-->
+			</div>
+		</div><!--movie-content-->
+	</div><!--movie-card-->
+	
+	<div class="movie-card">
+		<div class="movie-header bladeRunner2049">
+			<div class="header-icon-container">
+				<a href="https://www.youtube.com/embed/gCcx85zbxz4">
+					<i class="material-icons header-icon"></i>
+				</a>
+			</div>
+		</div><!--movie-header-->
+		<div class="movie-content">
+			<div class="movie-content-header">
+				<a href="#">
+					<h3 class="movie-title">Blade Runner 2049</h3>
+				</a>
+				<div class="imax-logo"></div>
+			</div>
+			<div class="movie-info">
+				<div class="info-section">
+					
+				</div><!--seat-->
+			</div>
+		</div><!--movie-content-->
+	</div><!--movie-card-->
+
+	
+
+	<div class="movie-card">
+		<div class="movie-header manOfSteel">
+			<div class="header-icon-container">
+				<a href="https://www.youtube.com/embed/T6DJcgm3wNY">
+					<i class="material-icons header-icon"></i>
+				</a>
+			</div>
+		</div><!--movie-header-->
+		<div class="movie-content">
+			<div class="movie-content-header">
+				<a href="#">
+					<h3 class="movie-title">Man of Steel</h3>
+				</a>
+				
+			</div>
+			<div class="movie-info">
+				<div class="info-section">
+				
+				
+				
+				</div><!--seat-->
+			</div>
+		</div><!--movie-content-->
+	</div><!--movie-card-->
+	</div>
+	
+</div><!--container-->
+
+</body></html>
